@@ -71,9 +71,14 @@
                         Get notified when we publish new insights on AI for business.
                         No spam, just practical advice you can use.
                     </p>
-                    <form class="newsletter-form">
+                    <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="newsletter" />
+                        <p style="display: none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
                         <input
                             type="email"
+                            name="email"
                             placeholder="Enter your email"
                             class="newsletter-input"
                             required
