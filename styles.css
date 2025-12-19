@@ -393,6 +393,9 @@ body {
     transition: var(--transition-slow);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .service-card::before {
@@ -450,6 +453,7 @@ body {
 .service-features {
     list-style: none;
     margin-bottom: 32px;
+    flex-grow: 1;
 }
 
 .service-features li {
